@@ -12,18 +12,16 @@ function initMap() {
     });
 }
 
-// 모달창 열기
-function openModal(imgSrc, imgAlt) {
-    var modal = document.getElementById('myModal');
+function openModal(imgSrc) {
+    var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modalImg");
-    var captionText = document.getElementById("caption");
 
     modal.style.display = "block";
     modalImg.src = imgSrc;
-    captionText.innerHTML = imgAlt;
 }
 
-// 모달창 닫기
 function closeModal() {
-    document.getElementById('myModal').style.display = "none";
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
 }
+
