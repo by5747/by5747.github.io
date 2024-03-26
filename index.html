@@ -1,32 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>모바일 청첩장</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>환영합니다!</h1>
-        <p>우리 결혼식에 초대합니다. 아래 지도를 참고해 주세요.</p>
-        <div id="map"></div>
-        <p>갤러리:</p>
-        <div class="gallery">
-            <img src="images/image1.jpg" alt="Image 1" onclick="openModal('images/image1.jpg', 'Image 1')">
-            <img src="images/image2.jpg" alt="Image 2" onclick="openModal('images/image2.jpg', 'Image 2')">
-            <img src="images/image3.jpg" alt="Image 3" onclick="openModal('images/image3.jpg', 'Image 3')">
-        </div>
-    </div>
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImg">
-        <div id="caption"></div>
-    </div>
-    <!-- Commento.io 코드 추가 -->
-    <script src="https://cdn.commento.io/js/commento.js"></script>
-    <div id="commento"></div>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="og:site_name" content="선혁이와 보미의 결혼식에 초대합니다"/>
+		<link rel="canonical" href="https://sooyeonsungdoo.github.io"/>
+		<meta name="twitter:url" content="https://sooyeonsungdoo.github.io"/>
+		<meta name="og:url" content="https://sooyeonsungdoo.github.io"/>
+		<title>선혁이와 보미의 결혼식에 초대합니다</title>
+		<meta name="twitter:title" content="선혁이와 보미의 결혼식에 초대합니다"/>
+		<meta name="og:title" content="선혁이와 보미의 결혼식에 초대합니다"/>
+		<meta name="description" content="2024년 11월 3일 세종대왕기념관"/>
+		<meta name="twitter:description" content="2024년 11월 3일 세종대왕기념관"/>
+		<meta name="og:description" content="2024년 11월 3일 세종대왕기념관"/>
+		<meta name="twitter:card" content="선혁이와 보미는 오래오래 행복하게 살았답니다."/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="/style.css" type="text/css"/>
+		<style>
 
-   
-</body>
+		</style>
+	</head>
+	<body>
+		<div class="imageContainer">
+		<img src="img/img1.jpg" id="mainImage">
+		</div>
+		<br>
+		<h1> 선혁이와 보미의 결혼식에 초대합니다 </h1>
+
+		<div id="parents">
+			이봉준 🤍 김길임<span class="suffix">의 차남  </span> <span style="font-weight:bold">이선혁</span><br>
+			김재민 🤍 김경희<span class="suffix">의 차녀  </span> <span style="font-weight:bold">김보미</span>
+		</div>
+		<br>
+		<h2> 초대의 말 </h2>
+
+		<p class="poem"> 
+		함께할 때에 비로소 깨닫는 사랑임을 <br>
+		영원히 기억하며 살겠습니다. <br>
+		귀한 걸음 해주시어 <br>
+		저희의 첫 시작을 축복해 주세요. <br>
+		<br>
+		</p>
+		<br>
+
+		<h2>일시 및 장소</h2>
+		<div id="date">
+			2024년 11월 3일 일요일 오후 2시 <br>
+			세종대왕기념관<br>
+			<span id="address">서울 청량리 ??? </span>
+		</div>
+		<!-- * 카카오맵 - 지도퍼가기 -->
+		<!-- 1. 지도 노드 -->
+		<div align="center" max-width="600px">
+			<!-- * 카카오맵 - 지도퍼가기 -->
+		<div id="daumRoughmapContainer1597653753785" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+		</div>
+		<br>
+		<br>
+		<p id="shuttle">
+		청량리역 n번 출구, 고려대역 n번출구 앞에서 셔틀버스 수시 왕복 운행<br>  <br>
+		</p>
+		<br>
+		<br>
+		<br>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1597653753785",
+		"key" : "2zok9",
+		"mapWidth" : "375",
+		"mapHeight" : "400"
+	}).render();
+</script>
+	</body>
 </html>
