@@ -25,3 +25,29 @@ function closeModal() {
     modal.style.display = "none";
 }
 
+// function copyToClipboard(val) {
+//     var t = document.createElement("textarea");
+//     document.body.appendChild(t);
+//     t.value = val;
+//     t.select();
+//     document.execCommand('copy');
+//     document.body.removeChild(t);
+// }
+
+
+// <button id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사">복사</button>
+
+
+function copyToClipboard(val) {
+    var el = document.createElement('textarea');
+    el.value = val;
+    el.setAttribute('readonly', '');
+    el.style.position = 'absolute';
+    el.style.left = '-9999px';
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+    alert("복사되었습니다: " + val);
+}
+
