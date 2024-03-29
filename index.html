@@ -135,6 +135,24 @@
             </div>
             <br/><br/><br/>
         </div>
+
+        <div class="gallery-container">
+            <!-- 이미지 아이템들 -->
+            <div class="gallery-item">
+                <img src="img/img1.jpg" onclick="openModal('img/img1.jpg')" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="img/img2.jpg" onclick="openModal('img/img2.jpg')" alt="Image 2">
+            </div>
+            <!-- 추가 이미지 아이템들 추가 가능 -->
+        </div>
+
+        <!-- 모달 -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+
         
         <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <br/>

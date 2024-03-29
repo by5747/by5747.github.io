@@ -12,30 +12,15 @@ function initMap() {
     });
 }
 
-function openModal(imgSrc) {
-    var modal = document.getElementById("myModal");
-    var modalImg = document.getElementById("modalImg");
-
-    modal.style.display = "block";
-    modalImg.src = imgSrc;
+function openModal(imageSrc) {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImg").src = imageSrc;
 }
 
+// 모달 닫기
 function closeModal() {
-    var modal = document.getElementById("myModal");
-    modal.style.display = "none";
+    document.getElementById("myModal").style.display = "none";
 }
-
-// function copyToClipboard(val) {
-//     var t = document.createElement("textarea");
-//     document.body.appendChild(t);
-//     t.value = val;
-//     t.select();
-//     document.execCommand('copy');
-//     document.body.removeChild(t);
-// }
-
-
-// <button id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사">복사</button>
 
 
 function copyToClipboard(val) {
