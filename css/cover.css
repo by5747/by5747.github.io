@@ -329,10 +329,12 @@ header {
   font-size: 1.3rem;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .section5-table tr td{
-  padding-top: 0.2em;
+  padding-top: 0.3em;
   padding-bottom:0.3em;
 }
 
