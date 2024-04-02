@@ -172,7 +172,7 @@ header {
 img {
   /* background-size: cover;
   background-position: center; */
-  max-width: 100%;
+  max-width: 42em;
   height: auto;
 }
 
