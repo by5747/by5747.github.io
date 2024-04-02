@@ -14,9 +14,10 @@
   font-family: 'NanumMyeongjo-b';
   src: url('../font/NanumMyeongjo-Bold.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: 'DancingScript-b';
-  src: url('../font/DancingScript-Bold.ttf') format('truetype');
+  font-family: 'SDMiSaeng-';
+  src: url('../font/SDMiSaeng.ttf') format('truetype');
 }
 
 /* Links */
@@ -148,8 +149,14 @@ body {
 
 .cover-heading {
   margin-top: 7.5rem;
+  margin-bottom: 2em;
   color: #fefefe;
   font-family: NanumMyeongjo-b;
+}
+.cover-heading2 {
+  margin-top: 10rem;
+  color: #fefefe;
+  font-family: NanumMyeongjo-r;
 }
 
 .top-div {
@@ -262,7 +269,8 @@ img {
 }
 
 .section3 {
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background-color: none;
 }
 
 .section3-title {
@@ -272,7 +280,7 @@ img {
 }
 
 .section3-main {
-  /* font-family: DancingScript-b; */
+  font-family: NanumMyeongjo-r;
   line-height: 1.5em;
   font-size: 2rem;
   margin-top: 2em;
@@ -303,6 +311,7 @@ img {
   font-family: NanumMyeongjo-b;
   line-height: 1.5em;
   font-size: 1.35rem;
+  font-weight: bold;
 }
 
 .section4-sec3 {
@@ -311,7 +320,7 @@ img {
   font-size: 1.35rem;
   background: none;
   border: none;
-  color: #55CCCC;
+  color: #7ccaff;
 }
 
 .section4-sec3-g {
@@ -320,7 +329,7 @@ img {
   font-size: 1.35rem;
   background: none;
   border: none;
-  color: #FF99CC;
+  color: #f79be9;
 }
 
 .section5 {
@@ -334,7 +343,7 @@ img {
 }
 
 .section5-main {
-  font-family: NanumMyeongjo-b;
+  font-family: NanumMyeongjo-e;
   line-height: 1.5em;
   font-size: 2rem;
 }
@@ -364,6 +373,8 @@ img {
 .section5-table tr td{
   padding-top: 0.3em;
   padding-bottom:0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .section5-table tr .sun{
@@ -396,14 +407,14 @@ img {
 }
 
 .section6-main {
-  /* font-family: DancingScript-b; */
+  font-family: NanumMyeongjo-r;
   line-height: 1.5em;
   font-size: 2rem;
 }
 
 
 .section6-location-main {
-  font-family: NanumMyeongjo-e;
+  font-family: NanumMyeongjo-r;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
@@ -423,6 +434,7 @@ img {
 }
 
 .section6-transport {
+  font-family: NanumMyeongjo-b;
   margin-top: 1em;
   color: #333;
   text-shadow: none;
@@ -430,11 +442,19 @@ img {
 }
 
 .section6-content {
-  /* font-family: DancingScript-b; */
+  font-family: NanumMyeongjo-r;
   line-height: 1.5em;
   /* font-size: 2rem; */
   text-align: left;
 }
+
+.map-icon{
+  width:48px;
+  height: auto;
+  margin-left: 1em;
+  margin-right: auto;
+}
+
 .section7 {
   background-color: #ffffff;
 }
@@ -494,18 +514,6 @@ img {
   border: 0;
 }
 
-/* .section7-button:active {
-  background-color: gray;
-  color: #fff;
-  border: 0;
-}
-
-.section7-button:valid {
-  background-color: #CC9999;
-  color: #fff;
-  border: 0;
-} */
-
 .section8-button {
   font-family: NanumMyeongjo-b;
   font-size: 1.2rem;
@@ -521,7 +529,27 @@ img {
   padding-right: 1em;
 }
 
-.section8 {
+
+
+.section8-title {
+  font-family: NanumMyeongjo-b;
+  color: #000000;
+  margin-top: 1em;
+  line-height: 2.1em;
+  font-size: 1.3rem;
+  text-align: left;
+}
+
+.section8-sub {
+  font-family: NanumMyeongjo-r;
+  color: #333;
+  line-height: 2.1em;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+
+.section9 {
   background-color: #f9f9f9;
 }
 
