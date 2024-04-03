@@ -172,7 +172,7 @@ header {
 img {
   /* background-size: cover;
   background-position: center; */
-  max-width: 100%;
+  max-width: min(100%, 42em);
   height: auto;
 }
 
@@ -298,6 +298,7 @@ img {
 }
 
 .section4-sec1-2 {
+  font-family: NanumMyeongjo-r;
   padding-top: 0.1rem;
 }
 
@@ -350,6 +351,12 @@ img {
 
 .section5-sub {
   font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1.3rem;
+}
+
+.section5-sub-1 {
+  font-family: NanumMyeongjo-b;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
@@ -414,7 +421,7 @@ img {
 
 
 .section6-location-main {
-  font-family: NanumMyeongjo-r;
+  font-family: NanumMyeongjo-b;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
@@ -546,6 +553,7 @@ img {
   line-height: 2.1em;
   font-size: 1.1rem;
   text-align: left;
+  margin-right: 1em;
 }
 
 
