@@ -540,6 +540,7 @@ img {
 .section7-main {
   /* font-family: NanumMyeongjo-b; */
   font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.4em;
   font-size: 1.4rem;
 }
@@ -547,6 +548,7 @@ img {
 .section7-button {
   /* font-family: NanumMyeongjo-b; */
   font-family: GowunDodum-r;
+  font-weight: bold;
   font-size: 1.2rem;
   background-color: gray;
   color: #fff;
