@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: 'SDMiSaeng-';
-  src: url('../font/SDMiSaeng.ttf') format('truetype');
+  font-family: 'GowunDodum-r';
+  src: url('../font/GowunDodum-Regular.ttf') format('truetype');
 }
 
 /* Links */
@@ -42,7 +42,9 @@ a:hover {
   margin-bottom: 1em;
   color: #333;
   text-shadow: none;
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-weight: bold;
+  font-family: GowunDodum-r;
   font-size: 1.7rem;
 }
 
@@ -50,7 +52,9 @@ a:hover {
   margin-top: 1em;
   color: #333;
   text-shadow: none;
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   font-size: 1.2rem;
 }
 
@@ -151,12 +155,15 @@ body {
   margin-top: 7.5rem;
   margin-bottom: 2em;
   color: #fefefe;
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
 }
 .cover-heading2 {
-  margin-top: 10rem;
+  /* margin-top: 30rem; */
   color: #fefefe;
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
 }
 
 .top-div {
@@ -198,19 +205,23 @@ img {
 
 .section1-main {
   background-color: #fefefe;
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 2em;
   font-size: 1.35rem;
 }
 
 .section1-sub {
-  font-family: NanumMyeongjo-r;
+  font-family: GowunDodum-r;
   line-height: 2.1em;
   font-size: 1.2rem;
 }
 
 .section1-sub2 {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 2.1em;
   font-size: 1.35rem;
 }
@@ -220,7 +231,9 @@ img {
 }
 
 .section1-button {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   font-size: 1.2rem;
   background-color: gray;
   border-color: black;
@@ -241,7 +254,9 @@ img {
 }
 
 .section2-main {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.5em;
   font-size: 1.35rem;
   position: relative;
@@ -263,7 +278,9 @@ img {
 }
 
 .section2-sub {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 2em;
   font-size: 1.2rem;
 }
@@ -280,7 +297,8 @@ img {
 }
 
 .section3-main {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 2rem;
   margin-top: 2em;
@@ -298,25 +316,31 @@ img {
 }
 
 .section4-sec1-2 {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   padding-top: 0.1rem;
 }
 
 .section4-sec1 {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
 
 .section4-sec2 {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.5em;
   font-size: 1.35rem;
   font-weight: bold;
 }
 
 .section4-sec3 {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.5em;
   font-size: 1.35rem;
   background: none;
@@ -325,7 +349,9 @@ img {
 }
 
 .section4-sec3-g {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.5em;
   font-size: 1.35rem;
   background: none;
@@ -344,31 +370,37 @@ img {
 }
 
 .section5-main {
-  font-family: NanumMyeongjo-e;
+  /* font-family: NanumMyeongjo-e; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 2rem;
 }
 
 .section5-sub {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
 
 .section5-sub-1 {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
 
 .section5-month {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 2rem;
 }
 
 .section5-table {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 1.3rem;
   border-top: 1px solid #ccc;
@@ -414,34 +446,41 @@ img {
 }
 
 .section6-main {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 2rem;
 }
 
 
 .section6-location-main {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.5em;
   font-size: 1.3rem;
 }
 
 .section6-sub {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 1.3rem;
   
 }
 
 .section6-location-sub {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   font-size: 1.2rem;
   text-align: left;
 }
 
 .section6-transport {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   margin-top: 1em;
   color: #333;
   text-shadow: none;
@@ -449,7 +488,8 @@ img {
 }
 
 .section6-content {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   line-height: 1.5em;
   /* font-size: 2rem; */
   text-align: left;
@@ -498,13 +538,15 @@ img {
 }
 
 .section7-main {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
   line-height: 1.4em;
   font-size: 1.4rem;
 }
 
 .section7-button {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
   font-size: 1.2rem;
   background-color: gray;
   color: #fff;
@@ -522,7 +564,9 @@ img {
 }
 
 .section8-button {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   font-size: 1.2rem;
   background-color: gray;
   border-color: black;
@@ -539,7 +583,9 @@ img {
 
 
 .section8-title {
-  font-family: NanumMyeongjo-b;
+  /* font-family: NanumMyeongjo-b; */
+  font-family: GowunDodum-r;
+  font-weight: bold;
   color: #000000;
   margin-top: 1em;
   line-height: 2.1em;
@@ -548,7 +594,8 @@ img {
 }
 
 .section8-sub {
-  font-family: NanumMyeongjo-r;
+  /* font-family: NanumMyeongjo-r; */
+  font-family: GowunDodum-r;
   color: #333;
   line-height: 2.1em;
   font-size: 1.1rem;
