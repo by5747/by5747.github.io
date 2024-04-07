@@ -235,11 +235,12 @@ img {
   font-family: GowunDodum-r;
   font-weight: bold;
   font-size: 1.2rem;
-  background-color: gray;
-  border-color: black;
-  color: white;
-  border: 0; 
+  background-color: transparent;
+  border: 1px solid #151515;
+  color: rgb(42, 40, 40);
   border-radius: 50px;
+  width: 10em;
+  height:auto;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-bottom: 0.7em;
@@ -360,7 +361,7 @@ img {
 }
 
 .section5 {
-  background-color: #f9f9f9;
+  background-color: rgb(249, 249, 249);
 }
 
 .section5-title {
@@ -417,12 +418,12 @@ img {
 }
 
 .section5-table tr .sun{
-  color: red;
+  color: rgb(195, 111, 89);
 }
 
 .section5-table tr .check{
   color: white;
-  background-color:pink;
+  background-color:rgb(132, 132, 132);
   border-radius: 50px;
 }
 
@@ -448,6 +449,7 @@ img {
 .section6-main {
   /* font-family: NanumMyeongjo-r; */
   font-family: GowunDodum-r;
+  font-weight: bold;
   line-height: 1.5em;
   font-size: 2rem;
 }
@@ -509,13 +511,18 @@ img {
   border:none;
   color:white;
   border-radius : 5px;
+  vertical-align: text-top;
+  width:5em;
+  height: auto;
+  background-color: #787878;
 }
 .section7-line{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 1em;
   color:black;
 }
 .section7-cp-btn-number{
+  font-family: GowunDodum-r;
+  font-size: 1.4rem;
   margin-right:10px;
 }
 .section7-title {
@@ -570,10 +577,12 @@ img {
   font-family: GowunDodum-r;
   font-weight: bold;
   font-size: 1.2rem;
-  background-color: gray;
-  border-color: black;
-  color: white;
-  border: 0; 
+  background-color: transparent;
+  border: 1px solid #151515;
+  color: rgb(42, 40, 40);
+  border-radius: 50px;
+  width: 10em;
+  height:auto;
   border-radius: 50px;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -628,3 +637,4 @@ img {
 .mastfoot {
   color: rgba(255, 255, 255, .5);
 }
+

@@ -17,6 +17,7 @@
     <title>이선혁, 김보미의 모바일 청첩장</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-zZoqtP/+oW4WrZh6IGLmcEwvPW+dy2kUyQnJ1oebfotVpIUwt8+BCm++8xFnJK28uVmQR2jaR0lQ5K9oOQkwXw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -64,21 +65,13 @@
             <span style="letter-spacing : -0.13em; margin-right: 0.1em;">⎺⎺</span>
         </h1> -->
 
-        <h1 class="cover-heading" style="margin-top: 18em; font-size: 2rem;">
+        <h1 class="cover-heading" style="margin-top: 17em; font-size: 2rem;">
             <span class="cover-heading2" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 2em;">이선혁·김보미</span><br/>
             <span class="cover-heading2" style="font-size: 1.5rem;">2024년 11월 3일 일요일 오후 2시</span><br/>
             <span class="cover-heading2" style="font-size: 1.5rem;">세종대왕기념관 웨딩홀</span><br/>
         </h1>
     </header>
-    <main role="main" class="inner">
-        <!-- <div>
-            <p class="top-title">선혁 그리고 보미</p>
-            <p class="top-title-sub">2024년 11월 3일 일요일 오후 2시</p>
-            <p class="top-title-sub">세종대왕기념관</p>
-            <br/><br/><br/>
-            <hr class="cover-container"/>
-            <br/>
-        </div> -->
+    <main role="main" class="inner" style="margin-top: 5em;">
         <div>
             <p class="section1-title section1-main">
                 결혼합니다
@@ -346,11 +339,11 @@
             </div>
             <!-- <br/> -->
             <div>
-                <a href="https://naver.me/5dxVcpfU">
+                <a href="https://naver.me/5dxVcpfU" style="margin-right: 3em;">
                     <img alt="naver-map" class="map-icon" id="naver-map"
                             src="img/map/naver-map.png"/>
                 </a>
-                <a href="https://kko.to/ZwHe76xBVu">
+                <a href="https://kko.to/ZwHe76xBVu"style="margin-right: 3em;">
                     <img alt="kakao-map" class="map-icon" id="kakao-map"
                             src="img/map/kakao-map.png"/>
                 </a>
@@ -408,97 +401,91 @@
 
 
         <hr class="cover-container"/>
+
         <div class="section7 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <br/>
             <p class="section7-title section7-main">마음 전달하는 곳</p>
             <br/>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn section7-button" data-toggle="modal" data-target="#groom">
-                신랑 혼주 계좌번호 보기
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="groom" tabindex="-1" aria-labelledby="groom" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title section7-modal section7-modal-title" id="groomLabel">신랑 혼주 계좌번호 보기</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+            
+            <div class="accordion" id="accordionExample">
+                <div class="card" style="border-radius: 10px;">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="section6-location section6-location-main btn btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                신랑 혼주 계좌번호 보기
                             </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="section7-line" style="margin-top: 1em;">
+                            <span class="section7-cp-btn-number">신한 123-456-789 이선혁</span>
+                            <span>
+                                <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
+                            </span>
                         </div>
+    
                         <div class="section7-line">
                             <span class="section7-cp-btn-number">신한 123-456-789 이봉준</span>
                             <span>
                                 <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
                             </span>
-                            </div>
-    
-                            <div class="section7-line">
-                                <span class="section7-cp-btn-number">신한 123-456-789 김길님</span>
-                                <span>
-                                    <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
-                                </span>
-                            </div>
-    
-                            <div class="section7-line">
-                                <span class="section7-cp-btn-number">우리 123-456-789 이선혁</span>
-                                <span>
-                                    <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
-                                </span>
-                            </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+                        </div>
+
+                        <div class="section7-line">
+                            <span class="section7-cp-btn-number">우리 123-456-789 김길님</span>
+                            <span>
+                                <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn section7-button" data-toggle="modal" data-target="#bride">
-                신부 혼주 계좌번호 보기
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="bride" tabindex="-1" aria-labelledby="bride" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title section7-modal section7-modal-title" id="brideLabel">신부 혼주 계좌번호 보기</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
+            
+            <div class="accordion" id="accordionExample">
+                <div class="card" style="border-radius: 10px;">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="section6-location section6-location-main btn btn-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                신랑 혼주 계좌번호 보기
                             </button>
-                        </div>
-                        <div class="section7-line">
-                        <span class="section7-cp-btn-number">신한 123-456-789 김재민</span>
-                        <span>
-                            <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
-                        </span>
-                        </div>
+                        </h2>
+                    </div>
 
-                        <div class="section7-line">
-                            <span class="section7-cp-btn-number">신한 123-456-789 김경희</span>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="section7-line" style="margin-top: 1em;">
+                            <span class="section7-cp-btn-number">신한 123-456-789 김보미</span>
                             <span>
-                                <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
+                                <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사">복사</button>
+                            </span>
+                        </div>
+    
+                        <div class="section7-line">
+                            <span class="section7-cp-btn-number">신한 123-456-789 김재민</span>
+                            <span>
+                                <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" ">복사</button>
                             </span>
                         </div>
 
                         <div class="section7-line">
-                            <span class="section7-cp-btn-number">우리 123-456-789 김보미</span>
+                            <span class="section7-cp-btn-number">우리 123-456-789 김경희</span>
                             <span>
-                                <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
+                                <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" ">복사</button>
                             </span>
-                        </div>
-                            
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+                
+
+
+
         <br/><br/>
         <hr class="cover-container"/>
         <br/>
         <p class="section7-title section7-main">전통혼례 예식 순서</p>
-        <p class="section1-title section1-sub" style="margin-left: 1em; margin-right: 1em;">
+        <p class="section1-title section1-sub" style="margin-top: 1em; margin-right: 1em; margin-bottom: 1em;">
             전통혼례에 친숙하지 않은 분들을 위해<br/>
             전통혼례 식순을 담았습니다.<br/>
             예식 당일 식순이 궁금하신 분은 아래 버튼을 참고해주세요.<br/>
