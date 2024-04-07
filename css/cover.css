@@ -513,7 +513,7 @@ img {
   border-radius : 5px;
   vertical-align: text-top;
   width:5em;
-  height: auto;
+  height: 2em;
   background-color: #787878;
 }
 .section7-line{
@@ -522,7 +522,7 @@ img {
 }
 .section7-cp-btn-number{
   font-family: GowunDodum-r;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-right:10px;
 }
 .section7-title {
@@ -548,8 +548,8 @@ img {
   /* font-family: NanumMyeongjo-b; */
   font-family: GowunDodum-r;
   font-weight: bold;
-  line-height: 1.4em;
-  font-size: 1.4rem;
+  line-height: 1.5em;
+  font-size: 2rem;
 }
 
 .section7-button {
