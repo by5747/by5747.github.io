@@ -513,8 +513,11 @@ img {
   border-radius : 5px;
   vertical-align: text-top;
   width:5em;
-  height: 2em;
+  height: auto;
   background-color: #787878;
+  font-size: 1rem;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 .section7-line{
   margin-bottom: 1em;
