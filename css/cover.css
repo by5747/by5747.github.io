@@ -645,7 +645,7 @@ img {
 
 .thumbnail {
   width: min(calc(33.33% - 10px), calc(14em - 10px));
-    height: auto;
+    height: 100px;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -664,10 +664,16 @@ img {
   align-items: center;
 }
 .modal-content {
-  margin: auto;
+  /* margin: auto;
   display: block;
   width: 80%;
-  max-width: 800px;
+  max-width: 800px; */
+
+  margin: auto;
+  display: block;
+  width: auto; /* 이미지 너비 자동 조절 */
+  max-width: 90%; /* 최대 너비 설정 */
+  max-height: 90vh; /* 최대 높이 설정 */
 }
 .modal-content img {
   width: 100%;
@@ -688,9 +694,12 @@ img {
   top: 50%;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   transition: 0.6s ease;
   user-select: none;
+  padding: 20px; /* 패딩 추가 */
+  /* background-color: transparent;
+  border: none; */
 }
 .prev {
   left: 2em;
@@ -699,5 +708,5 @@ img {
   right: 2em;
 }
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
 }
