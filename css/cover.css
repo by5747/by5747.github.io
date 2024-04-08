@@ -303,7 +303,7 @@ img {
   line-height: 1.5em;
   font-size: 2rem;
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .section3-image {
@@ -644,10 +644,10 @@ img {
 
 
 .thumbnail {
-  width: 200px;
-  height: 200px;
-  margin: 5px;
-  cursor: pointer;
+  width: min(calc(33.33% - 10px), calc(14em - 10px));
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 .modal {
   display: none;
@@ -660,6 +660,8 @@ img {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
 }
 .modal-content {
   margin: auto;
