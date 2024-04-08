@@ -17,7 +17,7 @@
     <title>이선혁, 김보미의 모바일 청첩장</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-zZoqtP/+oW4WrZh6IGLmcEwvPW+dy2kUyQnJ1oebfotVpIUwt8+BCm++8xFnJK28uVmQR2jaR0lQ5K9oOQkwXw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -34,7 +34,11 @@
             }
         }
     </style>
+
+
+
     <!-- Custom styles for this template -->
+    
     <link href="css/cover.css" rel="stylesheet">
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -53,6 +57,7 @@
     </script>
 
 </head>
+
 <body class="text-center">
 <div class="top-div">
     <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -247,7 +252,7 @@
             <br/><br/>
         </div>
         <hr class="cover-container"/>
-        <br/>
+        <!-- <br/>
         <div class="section3 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <p class="section3-title section3-main">사진첩</p>
             <div id="carouselExampleControls" class="carousel slide section3-image" data-ride="carousel">
@@ -258,18 +263,9 @@
                     <div class="carousel-item">
                         <img src="img/img2.jpg" class="d-block w-100">
                     </div>
-                    <!-- <div class="carousel-item">
-                        <img src="img/img4.jpeg" class="d-block w-100">
-                    </div> -->
-                    <!-- <div class="carousel-item">
-                        <img src="img/img6.jpeg" class="d-block w-100">
-                    </div> -->
                     <div class="carousel-item">
                         <img src="img/img7.jpeg" class="d-block w-100">
                     </div>
-                    <!-- <div class="carousel-item">
-                        <img src="img/img8.jpeg" class="d-block w-100">
-                    </div> -->
                     <div class="carousel-item">
                         <img src="img/img9.jpeg" class="d-block w-100">
                     </div>
@@ -296,7 +292,68 @@
                 </a>
             </div>
         </div>
-        <br/><br/><br/>
+        <br/><br/><br/> -->
+
+        <!-- 썸네일 이미지들 -->
+        <p class="section3-title section3-main">사진첩</p>
+
+        <div id="thumbnails">
+            <img class="thumbnail" src="img/img1.jpg" alt="Image 1">
+            <img class="thumbnail" src="img/img2.jpg" alt="Image 2">
+            <img class="thumbnail" src="img/img3.jpeg" alt="Image 3"> <br/>
+            <img class="thumbnail" src="img/img4.jpeg" alt="Image 4">
+            <img class="thumbnail" src="img/img6.jpeg" alt="Image 6">
+            <img class="thumbnail" src="img/img7.jpeg" alt="Image 7"><br/>
+            <img class="thumbnail" src="img/img8.jpeg" alt="Image 8">
+            <img class="thumbnail" src="img/img9.jpeg" alt="Image 9">
+            <img class="thumbnail" src="img/img10.jpeg" alt="Image 10"> <br/>
+            <img class="thumbnail" src="img/img11.jpeg" alt="Image 11">
+            <img class="thumbnail" src="img/img12.jpeg" alt="Image 12">
+            <img class="thumbnail" src="img/img13.jpeg" alt="Image 13"> <br/>
+        </div>
+        
+        <!-- 모달 창 -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <span class="prev" onclick="plusSlides(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlides(1)">&#10095;</span>
+        </div>
+
+        <script>
+            var images = [
+                "img/img1.jpg",
+                "img/img2.jpg",
+                "img/img3.jpeg",
+                "img/img4.jpeg",
+                "img/img6.jpeg",
+                "img/img7.jpeg",
+                "img/img8.jpeg",
+                "img/img9.jpeg",
+                "img/img10.jpeg",
+                "img/img11.jpeg",
+                "img/img12.jpeg",
+                "img/img13.jpeg"
+            ];
+            
+            var modal = document.getElementById("myModal");
+            var modalImage = document.getElementById("modalImage");
+            var currentIndex = 0;
+            
+            // 썸네일 클릭 시 모달 창 열고 해당 이미지 표시
+            var thumbnails = document.getElementsByClassName("thumbnail");
+            for (var i = 0; i < thumbnails.length; i++) {
+                thumbnails[i].addEventListener("click", function() {
+                currentIndex = Array.from(thumbnails).indexOf(this);
+                modal.style.display = "block";
+                modalImage.src = images[currentIndex];
+                });
+            }
+        </script>
+
+        <br/><br/>
+  
+  
         
         <div class="section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <!-- <br/> -->
@@ -423,6 +480,7 @@
                                 <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
                             </span>
                         </div>
+                        <hr class="cover-container"/>
     
                         <div class="section7-line">
                             <span class="section7-cp-btn-number">신한 123-456-789 이봉준</span>
@@ -430,6 +488,7 @@
                                 <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
                             </span>
                         </div>
+                        <hr class="cover-container"/>
 
                         <div class="section7-line">
                             <span class="section7-cp-btn-number">우리 123-456-789 김길님</span>
@@ -453,20 +512,29 @@
 
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="section7-line" style="margin-top: 1em;">
+                            <div style="text-align: left; margin-left: 1em;">신부 김보미 계좌번호</div>
+                            <hr class="cover-container"/>
                             <span class="section7-cp-btn-number">신한 123-456-789 김보미</span>
                             <span>
                                 <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사" style="vertical-align: middle;">복사</button>
                             </span>
                         </div>
+                        <br/>
+                        <!-- <hr class="cover-container"/> -->
     
                         <div class="section7-line">
+                            <div style="text-align: left; margin-left: 1em;">신부 부 김재민 계좌번호</div>
+                            <hr class="cover-container"/>
                             <span class="section7-cp-btn-number">신한 123-456-789 김재민</span>
                             <span>
                                 <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사"  style="vertical-align: middle;">복사</button>
                             </span>
                         </div>
+                        <br/>
 
                         <div class="section7-line">
+                            <div style="text-align: left; margin-left: 1em;">신부 모 김경희 계좌번호</div>
+                            <hr class="cover-container"/>
                             <span class="section7-cp-btn-number">우리 123-456-789 김경희</span>
                             <span>
                                 <button class="section7-cp-button" id="copybtn" onclick="copyToClipboard('123456789');" title="계좌번호 복사"  style="vertical-align: middle;">복사</button>
@@ -541,5 +609,13 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 </body>
 </html>
