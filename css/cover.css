@@ -649,7 +649,7 @@ img {
     margin-bottom: 10px;
     cursor: pointer;
 }
-.modal {
+.galleryModal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -663,7 +663,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.modal-content {
+.galleryModal-content {
   /* margin: auto;
   display: block;
   width: 80%;
@@ -675,7 +675,7 @@ img {
   max-width: 90%; /* 최대 너비 설정 */
   max-height: 90vh; /* 최대 높이 설정 */
 }
-.modal-content img {
+.galleryModal-content img {
   width: 100%;
   height: auto;
   margin: auto;
@@ -703,10 +703,10 @@ img {
   border: none; */
 }
 .prev {
-  left: 0.5em;
+  left: 0.1em;
 }
 .next {
-  right: 0.5em;
+  right: 0.1em;
 }
 .prev:hover, .next:hover {
   background-color: transparent;
