@@ -678,6 +678,7 @@ img {
 .modal-content img {
   width: 100%;
   height: auto;
+  margin: auto;
 }
 .close {
   position: absolute;
@@ -702,10 +703,10 @@ img {
   border: none; */
 }
 .prev {
-  left: 2em;
+  left: 0.5em;
 }
 .next {
-  right: 2em;
+  right: 0.5em;
 }
 .prev:hover, .next:hover {
   background-color: transparent;
