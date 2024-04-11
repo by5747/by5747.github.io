@@ -668,12 +668,13 @@ img {
   display: block;
   width: 80%;
   max-width: 800px; */
-
   margin: auto;
   display: block;
   width: auto; /* 이미지 너비 자동 조절 */
   max-width: 90%; /* 최대 너비 설정 */
   max-height: 90vh; /* 최대 높이 설정 */
+  top : 50%;
+  transform : translateY(-50%)
 }
 .galleryModal-content img {
   width: 100%;
