@@ -460,7 +460,7 @@ img {
   font-family: GowunDodum-r;
   font-weight: bold;
   line-height: 1.5em;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 .section6-sub {
@@ -527,6 +527,8 @@ img {
   font-family: GowunDodum-r;
   font-size: 1.2rem;
   margin-right:10px;
+  text-align: left;
+  margin-left:1em
 }
 .section7-title {
   margin-top: 1em;
@@ -668,13 +670,20 @@ img {
   display: block;
   width: 80%;
   max-width: 800px; */
-  margin: auto;
+
+  /* margin: auto;
   display: block;
-  width: auto; /* 이미지 너비 자동 조절 */
+  width: auto; 
+  max-width: 90%;
+  max-height: 90vh;  */
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 90%; /* 최대 너비 설정 */
   max-height: 90vh; /* 최대 높이 설정 */
-  top : 50%;
-  transform : translateY(-50%)
+  
 }
 .galleryModal-content img {
   width: 100%;
