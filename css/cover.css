@@ -646,10 +646,11 @@ img {
 
 
 .thumbnail {
-  width: min(calc(33.33% - 10px), calc(14em - 10px));
+  width: calc(min(33.33%, 14em) - 10px);
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     cursor: pointer;
+    /* line-height: 100%; */
 }
 .galleryModal {
   display: none;
