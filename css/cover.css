@@ -647,7 +647,7 @@ img {
 
 .thumbnail {
   width: min(calc(33.33% - 10px), calc(14em - 10px));
-    height: 100px;
+    height: auto;
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -694,7 +694,7 @@ img {
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
+  color: #535252;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
